@@ -1,0 +1,44 @@
+name: Suggest a WorkOnStage guest
+description: Suggest yourself or another STEM professional for a future conversation.
+title: "Guest idea: "
+labels: [guest-suggestion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us discover great work! **This is a public GitHub issue.**
+        Do not include private contact information, personal phone numbers, or email addresses without consent.
+  - type: input
+    id: guest
+    attributes:
+      label: Guest name
+      description: A public professional name or preferred name.
+      placeholder: e.g., Dr. Alex Rivera
+    validations:
+      required: true
+  - type: input
+    id: public-link
+    attributes:
+      label: Public professional link (optional)
+      description: Personal website, institution profile, or other public page.
+  - type: textarea
+    id: work
+    attributes:
+      label: What work should they talk about?
+      description: Tell us what makes their work interesting and relevant to STEM audiences.
+    validations:
+      required: true
+  - type: dropdown
+    id: relation
+    attributes:
+      label: Are you suggesting yourself?
+      options:
+        - 'Yes'
+        - 'No'
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public submission reminder
+      options:
+        - label: I understand this suggestion will be publicly visible on GitHub.
+          required: true

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://workonstage.github.io/sitemap.xml
